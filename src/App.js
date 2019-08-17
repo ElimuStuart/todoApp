@@ -1,13 +1,14 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
 function App() {
+  
   return (
     <div>
-      <input type="checkbox" /> <label>Go to the store.</label> <br />
-      <input type="checkbox" /> <label>Make bread.</label> <br />
-      <input type="checkbox" /> <label>Completed reading "Learn Django".</label>{" "}
-      <br />
-      <input type="checkbox" /> <label>Go jogging.</label>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </div>
   );
 }
