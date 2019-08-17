@@ -1,13 +1,13 @@
 import React from "react";
 
-function TodoItem() {
+function TodoItem(props) {
 
   const style = {
     fontWeight: 'bold'
   }
   return (
     <div style={style}>
-      <input type="checkbox" /> <label>Go to the store.</label> <br />
+      <input type="checkbox" checked={props.item.completed}/> <label>{props.item.text}</label> <br />
     </div>
   )
 
