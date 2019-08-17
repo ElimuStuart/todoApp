@@ -5,9 +5,10 @@ function TodoItem(props) {
   const style = {
     fontWeight: 'bold'
   }
+
   return (
     <div style={style}>
-      <input type="checkbox" checked={props.item.completed}/> <label>{props.item.text}</label> <br />
+      <input type="checkbox" onChange={() => console.log("clicked")} checked={props.item.completed}/> <label>{props.item.text}</label> <br />
     </div>
   )
 
